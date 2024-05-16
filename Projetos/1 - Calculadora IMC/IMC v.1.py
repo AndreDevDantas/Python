@@ -1,5 +1,4 @@
-#Projeto de Calculadora de IMC em Python Simples
-#IMC = Peso/(Altura*Altura)
+#Projeto de Calculadora de IMC Simples em Python
 
 peso = input("Informe seu peso: ")
 altura = input("Informe sua Altura (Use . para casas decimais): ")
