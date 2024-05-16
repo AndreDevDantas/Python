@@ -1,4 +1,4 @@
-#Testando e brincando com estrutura de descisão (If, Else, Elif)
+#Testando e brincando com estrutura de decisão (If, Else, Elif)
 
 #Brincando com a indentação  para saida do print
 a = int(input("Informe o valor de a: "))
