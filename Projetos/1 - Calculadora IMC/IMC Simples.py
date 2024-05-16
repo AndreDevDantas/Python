@@ -2,12 +2,10 @@
 #IMC = Peso/(Altura*Altura)
 
 peso = input("Informe seu peso: ")
-altura = input("Informe sua Altura (Use ponto para casas decimais): ")
+altura = input("Informe sua Altura (Use . para casas decimais): ")
 
 peso = float(peso)
 altura = float(altura)
-
 imc = peso / (altura ** 2)
-print(imc)
 
 print(f"seu imc é de {round(imc,2)}")
