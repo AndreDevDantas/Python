@@ -1,6 +1,6 @@
 import sqlite3 as conn
 from os import path, getcwd
-dbpath = path.join(getcwd(), "4 - Cadastro de Clientes", "banco", "telefones.sqlite")
+dbpath = path.join(getcwd(), "Projetos", "4 - Cadastro de Clientes", "Banco de Dados", "telefones.sqlite")
 
 def criar_db():
   with conn.connect(dbpath) as cx:
@@ -49,7 +49,7 @@ def tabela(data):
 
 def menu():
 
-  print("1 - inserir")
+  print("\n1 - inserir")
   print("2 - alterar")
   print("3 - excluir")
   print("4 - listar")
