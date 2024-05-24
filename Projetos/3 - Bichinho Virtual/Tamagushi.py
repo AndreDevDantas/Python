@@ -80,15 +80,12 @@ class Tamagushi:
         if comando == 'a':
             self.alimentar(int(input(f'Digite o quanto você gostaria de alimentar {self.__nome} (1 a 100): ')))
             print(f'Você alimentou {self.__nome}!\n')
-            self.status()
         elif comando == 'b':
             self.brincar(int(input(f'Digite por quantos minutos gostaria de brincar com {self.__nome} (1 a 100): ')))
             print(f'Você passou {comando} minutos brincando com {self.__nome}!\n')
-            self.status()
         elif comando == 'd':
             self.descansar(int(input(f'Digite por quantos minutos gostaria {self.__nome} descanse (1 a 100): ')))
-            print(f'Você passou {comando} minutos brincando com {self.__nome}!\n')
-            self.status()
+            print(f'Você passou {comando} minutos descansando com {self.__nome}!\n')
         elif comando == 'PortaSecreta':
             self.PortaSecreta()
             print('\n')
@@ -160,9 +157,9 @@ class Tamagushi:
 # Rodar jogo
 bichinho = Tamagushi(input('Digite o nome do seu bichinho: '))
 print(f'O nome do seu novo pet se chama {bichinho.nome}\n')
-print(bichinho.menu())
 while bichinho.vivo:
     bichinho.status()
+    print(bichinho.menu())
     bichinho.run_acoes(input('Digite o que você quer fazer com seu bichinho: '))
     if not bichinho.vivo:
         break
