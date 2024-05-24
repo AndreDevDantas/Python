@@ -6,7 +6,7 @@ from os import path, getcwd
 dbpath = path.join(getcwd(), "Projetos", "5 - Cadastro Tkinter", "Banco de Dados", "telefones.sqlite")
 
 janela = tk.Tk()
-janela.title("Cadastro de contatos")
+janela.title("Cadastro de Contatos")
 janela.resizable(False, False)
 
 nome, telefone = tk.StringVar(), tk.StringVar()
